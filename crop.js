@@ -10,7 +10,8 @@ await nodefs;
 11942811_46 ， 000012.jpg 000013.jpg 重覆
 */
 const allinserts={
-    'svv1':{73:['svv1-073.jpg','svv1-074.jpg','svv1-075.jpg']}
+    'svv1':{73:['svv1-073.jpg','svv1-074.jpg','svv1-075.jpg']},
+    'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] }
 }
 const tempdir="A:/crop/"
 const deffile='./vcpp-yongle-versions/0010a-001羽08.zip'
