@@ -6,3 +6,5 @@ copy/Y dc.off-listwords.csv dc-fgdzd.csv
 cmd/c ptk listwords dc.off dfb-entries.txt
 copy/Y dc.off-listwords.csv dc-dfb.csv
 node gen-dictentry.js
+
+copy/Y off\zentries.tsv ..\dharmacloud\off\
