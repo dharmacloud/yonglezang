@@ -11,7 +11,8 @@ await nodefs;
 */
 const allinserts={
     'svv1':{73:['svv1-073.jpg','svv1-074.jpg','svv1-075.jpg']},
-    'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] }
+    'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] },
+     'agmm13':{ 82:['agmm13-082.jpg','agmm13-083.jpg','agmm13-084.jpg','agmm13-085.jpg','agmm13-086.jpg','agmm13-087.jpg','agmm13-088.jpg'] }
 }
 const tempdir="A:/crop/"
 const deffile='./vcpp-yongle-versions/0010a-001羽08.zip'
@@ -150,6 +151,16 @@ JSZip.loadAsync(data).then(async function (zip) {
             
             await dotask(buf, frames[i],(nth+insertcount+pageoffset).toString().padStart(3,'0'),adjx,adjy,zipout);
         }
+
+        //append
+        if (inserts[nth+1]) {
+            nth++;
+            for (let j=0;j<inserts[nth].length;j++) {
+                await insertimage( inserts[nth][j],(nth+pageoffset+insertcount).toString().padStart(3,'0'), zipout);
+                insertcount++;
+            }
+        }
+
     }
 
 
