@@ -1,6 +1,6 @@
 
-export const ksitigarbha1=`youtube
-9S7vUKn42D0
+export const ksitigarbha1=`cn
+ksitigarbha
 一級播音員
 0025
 0028
@@ -526,8 +526,8 @@ export const ksitigarbha1=`youtube
 
 
 // add to allow duplicate keys
-export const ksitigarbha2=`youtube
-9S7vUKn42D0^2
+export const ksitigarbha2=`cn
+ksitigarbha^2
 一級播音員
 5515
 5515

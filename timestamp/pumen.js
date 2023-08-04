@@ -1,5 +1,5 @@
-export const fgs_pumen=`youtube
-ji1bHi62yio
+export const fgs_pumen=`cn
+pumen
 佛光山課誦
 0133
 0139

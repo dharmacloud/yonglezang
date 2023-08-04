@@ -1,5 +1,5 @@
-export const amtb_china=`youtube
-6SPgY9y4S2c
+export const amtb_china=`cn
+amtb
 國家一級播音員
 0000
 0003

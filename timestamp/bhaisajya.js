@@ -1,5 +1,5 @@
-export const zhanyuan_bhaisajya=`youtube
-YWNJUqf7YIQ
+export const zhanyuan_bhaisajya=`cn
+bhaisajya_zhanyuan
 湛願法師
 1140
 1141
@@ -302,8 +302,8 @@ YWNJUqf7YIQ
 3846
 3846
 3846`
-export const ddm_bhaisajya=`youtube
-DnLGZhs6hH0
+export const ddm_bhaisajya=`cn
+bhaisajya_ddm
 法鼓山
 0204
 0205
@@ -608,7 +608,7 @@ DnLGZhs6hH0
 3819`
 
 /* 不準
-export const jianren_bhaisajya=`youtube
+export const jianren_bhaisajya=`cn
 DCjB_dfSrCQ
 見仁法師
 0143
@@ -913,8 +913,8 @@ DCjB_dfSrCQ
 3241
 3242`
 */
-export const bhaisajya_huiping=`youtube
-KMyG9nQofS8
+export const bhaisajya_huiping=`cn
+bhaisajya_huiping
 慧平法師
 0230
 0236

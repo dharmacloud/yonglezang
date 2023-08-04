@@ -1,5 +1,5 @@
-export const fayewongzhang_pphs=`youtube
-P5HI-Yw7Aao
+export const fayewongzhang_pphs=`cn
+pphs_fayewong
 王菲張智霖
 0005
 0006
@@ -24,8 +24,8 @@ P5HI-Yw7Aao
 0356`
 
 //連播不好接起來//中文字幕
-export const sanskrit_pphs=`youtube
-bDOcp6uk584
+export const sanskrit_pphs=`cn
+pphs_sanskrit
 般禪梵唱
 0046
 0046
@@ -50,8 +50,8 @@ bDOcp6uk584
 0406`
 
 //梵文字幕
-export const sanskrit_pphs_sanskrit=`youtube
-bDOcp6uk584
+export const sanskrit_pphs_sanskrit=`cn
+pphs_sanskrit
 般禪梵唱
 0046
 0054
@@ -81,8 +81,8 @@ bDOcp6uk584
 0355
 0359`
 
-export const chant_pphs=`youtube
-7OXGM0CArAw
+export const chant_pphs=`cn
+pphs_chant
 課頌
 0000
 0039
@@ -106,8 +106,8 @@ export const chant_pphs=`youtube
 0316`
 
 //from https://docs.google.com/spreadsheets/d/1nSr-rMlk0ns3BB3FYsfCIwFTaREiij53REQKxlAb8p8/edit#gid=1394969850
-export const jackychang_pphs=`youtube
-iL_W8W2737A
+export const jackychang_pphs=`cn
+pphs_jackychang
 張學友
 0000
 0001
@@ -131,8 +131,8 @@ iL_W8W2737A
 0418
 0421`
 
-export const kanhojp_pphs=`youtube
-_afssYk-CUQ
+export const kanhojp_pphs=`cn
+pphs_kanhojp
 寬邦日語
 0001
 0001
@@ -156,8 +156,8 @@ _afssYk-CUQ
 0218
 0224`
 
-export const kanhozh_pphs=`youtube
-BkLfOEyEW6U
+export const kanhozh_pphs=`cn
+pphs_kanhozh
 寬邦漢語
 0001
 0001
@@ -181,8 +181,8 @@ BkLfOEyEW6U
 0235
 0239`
 
-export const kwanyinchanlin=`youtube
-cm9wdgmC0Bs
+export const kwanyinchanlin=`cn
+pphs_kwanyinchanlin
 韓國觀音禪林
 0013
 0013

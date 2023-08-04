@@ -1,5 +1,5 @@
-export const lastword=`youtube
-Mbxd5YUz8sw
+export const lastword=`cn
+lastword
 見輝法師
 0051
 0054

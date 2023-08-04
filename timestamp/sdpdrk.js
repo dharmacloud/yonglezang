@@ -1,5 +1,5 @@
-export const sdpdrk1=`youtube
-S4S7k2JU2LQ
+export const sdpdrk1=`cn
+sdpdrk
 誦讀
 0019
 0019
@@ -584,8 +584,8 @@ S4S7k2JU2LQ
 5556
 5602`
 
-export const sdpdrk2=`youtube
-S4S7k2JU2LQ^2
+export const sdpdrk2=`cn
+sdpdrk^2
 誦讀
 5624
 5624
@@ -1198,8 +1198,8 @@ S4S7k2JU2LQ^2
 15556
 15559`
 
-export const sdpdrk3=`youtube
-S4S7k2JU2LQ^3
+export const sdpdrk3=`cn
+sdpdrk^3
 誦讀
 15617
 15617
@@ -1802,8 +1802,8 @@ S4S7k2JU2LQ^3
 25336
 25342`
 
-export const sdpdrk4=`youtube
-S4S7k2JU2LQ^4
+export const sdpdrk4=`cn
+sdpdrk^4
 誦讀
 25402
 25402
@@ -2513,8 +2513,8 @@ S4S7k2JU2LQ^4
 40252
 40256`
 
-export const sdpdrk5=`youtube
-S4S7k2JU2LQ^5
+export const sdpdrk5=`cn
+sdpdrk^5
 誦讀
 40306
 40306
@@ -3189,8 +3189,8 @@ S4S7k2JU2LQ^5
 50852
 50858`
 
-export const sdpdrk6=`youtube
-S4S7k2JU2LQ^6
+export const sdpdrk6=`cn
+sdpdrk^6
 誦讀
 50919
 50919
@@ -3835,8 +3835,8 @@ S4S7k2JU2LQ^6
 61609
 61612`
 
-export const sdpdrk7=`youtube
-S4S7k2JU2LQ^7
+export const sdpdrk7=`cn
+sdpdrk^7
 誦讀
 61632
 61632

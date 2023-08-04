@@ -1,5 +1,5 @@
-export const xincheng_amtb_xuanzang=`youtube
-St8uh97EEFc
+export const xincheng_amtb_xuanzang=`cn
+amtb_xuanzang
 星辰
 0103
 0107

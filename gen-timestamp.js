@@ -3,7 +3,7 @@ from: https://docs.google.com/spreadsheets/d/1MVVBbS60aHA1QfQrj9n9ghuUiy5rx6F1rN
 */
 import { venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,
     vcpp_xuanzang,vcpp_yijing,
-    fayewong_youtube,fayewong_qq} from './timestamp/vcpp.js'
+    vcpp_fayewong} from './timestamp/vcpp.js'
 import { fayewong_pph} from './timestamp/pph.js'
 import { fayewongzhang_pphs,sanskrit_pphs, sanskrit_pphs_sanskrit
     ,jackychang_pphs,kanhojp_pphs,kanhozh_pphs,chant_pphs,kwanyinchanlin} from './timestamp/pphs.js'
@@ -37,7 +37,7 @@ const dump=(book,_tracks,out)=>{
     for (let n in _tracks) {
         const lines=_tracks[n].split(/\r?\n/);
         const videohost=lines.shift();
-        const videoid=lines.shift();
+        const audioid=lines.shift();
         const authorname=lines.shift();
         prev=parseTime(lines[0]);
         const times=[];
@@ -51,7 +51,7 @@ const dump=(book,_tracks,out)=>{
             prev=t;
             
         }
-        out.push(videoid+'\t'+videohost+'\t'+book+'\t'+authorname+'\t'+times.join(','));
+        out.push(audioid+'\t'+videohost+'\t'+book+'\t'+authorname+'\t'+times.join(','));
     }
 }
 
@@ -60,7 +60,7 @@ const tracks={
    'amtb_xuanzang':{xincheng_amtb_xuanzang},
    'amtb':{amtb_china},
    'lastword':{lastword},
-    'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,fayewong_qq,fayewong_youtube},
+    'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong},
     'vcpp_xuanzang':{vcpp_xuanzang},
     'vcpp_yijing':{vcpp_yijing},
     'pumen':{fgs_pumen},
@@ -88,5 +88,5 @@ writeChanged('off/timestamp.tsv', zhout.join('\n') ,true)
 for (let book in sktracks) {
     dump(book,sktracks[book],skout)
 }
-writeChanged('off/sanskrit.tsv', skout.join('\n') ,true)
+writeChanged('off/timestamp_sanskrit.tsv', skout.join('\n') ,true)
 

@@ -1,5 +1,5 @@
-export const venxinding=`youtube
-m9ZmMrY88qE
+export const venxinding=`cn
+vcpp_xinding
 心定法師
 7:04
 7:04
@@ -312,8 +312,8 @@ m9ZmMrY88qE
 36:18
 36:19
 36:19`
-export const dharmadrum=`youtube
-RquHJ4jzXKs
+export const dharmadrum=`cn
+vcpp_ddm
 法鼓山
 0:30
 0:30
@@ -625,8 +625,8 @@ RquHJ4jzXKs
 24:59
 25:00
 25:00`
-export const venjianhui=`youtube
-z-IpOREVDHo
+export const venjianhui=`cn
+vcpp_jianhui
 見輝法師
 0031
 0031
@@ -938,8 +938,8 @@ z-IpOREVDHo
 2550
 2557
 2558`
-export const jiangxun=`youtube
-wjvwySjCVoQ
+export const jiangxun=`cn
+vcpp_jiangxun
 蔣勳
 0001
 0004
@@ -1251,8 +1251,8 @@ wjvwySjCVoQ
 3254
 3259
 3260`
-export const yangdeshi=`youtube
-5C4INS3hK40
+export const yangdeshi=`cn
+vcpp_yangdeshi
 養德禪寺
 0109
 0109
@@ -1565,7 +1565,9 @@ export const yangdeshi=`youtube
 3331
 3335`
 	
-const fayewong=`
+export const vcpp_fayewong=`cn
+vcpp_fayewong
+王菲
 0031
 0035
 0045
@@ -1876,11 +1878,9 @@ const fayewong=`
 3856
 3901
 3905`
-export const fayewong_qq="qq\nw35152ox685\n王菲(腾讯)"+fayewong
-export const fayewong_youtube="youtube\nXpROd_PKBb0\n王菲"+fayewong
 
-export const vcpp_yijing=`youtube
-HvFWWs01qWM
+export const vcpp_yijing=`cn
+vcpp_yijing
 星辰
 0022
 0027
@@ -2189,8 +2189,8 @@ HvFWWs01qWM
 4835
 4845`
 
-export const vcpp_xuanzang=`youtube
-aBdwfpjoeRk
+export const vcpp_xuanzang=`cn
+vcpp_xuanzang
 星辰
 0022
 0028
