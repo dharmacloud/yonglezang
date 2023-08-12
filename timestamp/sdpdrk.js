@@ -1,6 +1,6 @@
 export const sdpdrk1=`cn
 sdpdrk
-誦讀
+誦讀|S4S7k2JU2LQ
 0019
 0019
 0019
@@ -586,7 +586,7 @@ sdpdrk
 
 export const sdpdrk2=`cn
 sdpdrk^2
-誦讀
+誦讀|S4S7k2JU2LQ
 5624
 5624
 5624
@@ -1200,7 +1200,7 @@ sdpdrk^2
 
 export const sdpdrk3=`cn
 sdpdrk^3
-誦讀
+誦讀|S4S7k2JU2LQ
 15617
 15617
 15617
@@ -1804,7 +1804,7 @@ sdpdrk^3
 
 export const sdpdrk4=`cn
 sdpdrk^4
-誦讀
+誦讀|S4S7k2JU2LQ
 25402
 25402
 25402
@@ -2515,7 +2515,7 @@ sdpdrk^4
 
 export const sdpdrk5=`cn
 sdpdrk^5
-誦讀
+誦讀|S4S7k2JU2LQ
 40306
 40306
 40306
@@ -3191,7 +3191,7 @@ sdpdrk^5
 
 export const sdpdrk6=`cn
 sdpdrk^6
-誦讀
+誦讀|S4S7k2JU2LQ
 50919
 50919
 50919
@@ -3837,7 +3837,7 @@ sdpdrk^6
 
 export const sdpdrk7=`cn
 sdpdrk^7
-誦讀
+誦讀|S4S7k2JU2LQ
 61632
 61632
 61632

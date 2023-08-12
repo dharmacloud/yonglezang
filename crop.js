@@ -12,11 +12,10 @@ await nodefs;
 const allinserts={
     'svv1':{73:['svv1-073.jpg','svv1-074.jpg','svv1-075.jpg']},
     'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] },
-     'agmm13':{ 82:['agmm13-082.jpg','agmm13-083.jpg','agmm13-084.jpg','agmm13-085.jpg','agmm13-086.jpg','agmm13-087.jpg','agmm13-088.jpg'] }
+    'agmm13':{ 82:['agmm13-082.jpg','agmm13-083.jpg','agmm13-084.jpg','agmm13-085.jpg','agmm13-086.jpg','agmm13-087.jpg','agmm13-088.jpg'] }
 }
 const tempdir="A:/crop/"
 const deffile='./vcpp-yongle-versions/0010a-001羽08.zip'
-
 
 let input=(process.argv[2]||deffile).replace('.json','.zip')//'E:/yongle-bei-3400/11864611_14普門品/'
 let named=false;//name specified in json filename
@@ -114,14 +113,17 @@ JSZip.loadAsync(data).then(async function (zip) {
     const zipout=new JSZip();
     let extracted=null;
 
+    console.log(outfn,named)
     if (!named){
         for (let i in filerenames) {
             if (~outfn.indexOf(i)) {
+                console.log(outfn,filerenames[i])
                 outfn=filerenames[i];
                 break
             }
-        }    
+        }
     }
+    
 
     const inserts=allinserts[outfn];
     let insertcount=0;
@@ -153,7 +155,7 @@ JSZip.loadAsync(data).then(async function (zip) {
         }
 
         //append
-        if (inserts[nth+1]) {
+        if (inserts&&inserts[nth+1]) {
             nth++;
             for (let j=0;j<inserts[nth].length;j++) {
                 await insertimage( inserts[nth][j],(nth+pageoffset+insertcount).toString().padStart(3,'0'), zipout);

@@ -1,6 +1,6 @@
 export const venxinding=`cn
 vcpp_xinding
-心定法師
+心定法師|m9ZmMrY88qE
 7:04
 7:04
 7:10
@@ -314,7 +314,7 @@ vcpp_xinding
 36:19`
 export const dharmadrum=`cn
 vcpp_ddm
-法鼓山
+法鼓山|RquHJ4jzXKs
 0:30
 0:30
 0:36
@@ -627,7 +627,7 @@ vcpp_ddm
 25:00`
 export const venjianhui=`cn
 vcpp_jianhui
-見輝法師
+見輝法師|z-IpOREVDHo
 0031
 0031
 0034
@@ -940,7 +940,7 @@ vcpp_jianhui
 2558`
 export const jiangxun=`cn
 vcpp_jiangxun
-蔣勳
+蔣勳|wjvwySjCVoQ
 0001
 0004
 0009
@@ -1253,7 +1253,7 @@ vcpp_jiangxun
 3260`
 export const yangdeshi=`cn
 vcpp_yangdeshi
-養德禪寺
+養德禪寺|5C4INS3hK40
 0109
 0109
 0125
@@ -1567,7 +1567,7 @@ vcpp_yangdeshi
 	
 export const vcpp_fayewong=`cn
 vcpp_fayewong
-王菲
+王菲|XpROd_PKBb0
 0031
 0035
 0045
@@ -1881,7 +1881,7 @@ vcpp_fayewong
 
 export const vcpp_yijing=`cn
 vcpp_yijing
-星辰
+星辰|HvFWWs01qWM
 0022
 0027
 0033
@@ -2190,7 +2190,7 @@ vcpp_yijing
 4845`
 
 export const vcpp_xuanzang=`cn
-vcpp_xuanzang
+vcpp_xuanzang|aBdwfpjoeRk
 星辰
 0022
 0028

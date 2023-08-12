@@ -1,6 +1,6 @@
 export const xincheng_amtb_xuanzang=`cn
 amtb_xuanzang
-星辰
+星辰|St8uh97EEFc
 0103
 0107
 0112

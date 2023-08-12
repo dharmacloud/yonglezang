@@ -1,6 +1,6 @@
 export const lastword=`cn
 lastword
-見輝法師
+見輝法師|Mbxd5YUz8sw
 0051
 0054
 0102

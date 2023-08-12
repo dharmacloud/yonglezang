@@ -1,6 +1,6 @@
 export const amtb_china=`cn
 amtb
-國家一級播音員
+國家一級播音員|6SPgY9y4S2c
 0000
 0003
 0003

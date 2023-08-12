@@ -31,7 +31,7 @@ const parseTime=str=>{
     return t;
 }
 const zhout=['^:<name=timestamp preload=true>vid\tvideohost\tbookid\tperformer\ttimestamp=numbers']
-const skout=['^:<name=timestamp/sanskrit preload=true>vid\tvideohost\tbookid\tperformer\ttimestamp=numbers']
+const skout=['^:<name=timestamp_sanskrit preload=true>vid\tvideohost\tbookid\tperformer\ttimestamp=numbers']
 const dump=(book,_tracks,out)=>{
     let prev=0;
     for (let n in _tracks) {

@@ -1,6 +1,6 @@
 export const fayewongzhang_pphs=`cn
 pphs_fayewong
-王菲張智霖
+王菲張智霖|P5HI-Yw7Aao
 0005
 0006
 0007
@@ -26,7 +26,7 @@ pphs_fayewong
 //連播不好接起來//中文字幕
 export const sanskrit_pphs=`cn
 pphs_sanskrit
-般禪梵唱
+般禪梵唱|bDOcp6uk584
 0046
 0046
 0054
@@ -52,7 +52,7 @@ pphs_sanskrit
 //梵文字幕
 export const sanskrit_pphs_sanskrit=`cn
 pphs_sanskrit
-般禪梵唱
+般禪梵唱|bDOcp6uk584
 0046
 0054
 0106
@@ -83,7 +83,7 @@ pphs_sanskrit
 
 export const chant_pphs=`cn
 pphs_chant
-課頌
+課誦|7OXGM0CArAw
 0000
 0039
 0040
@@ -103,12 +103,13 @@ pphs_chant
 0255
 0257
 0315
-0316`
+0316
+0317`
 
 //from https://docs.google.com/spreadsheets/d/1nSr-rMlk0ns3BB3FYsfCIwFTaREiij53REQKxlAb8p8/edit#gid=1394969850
 export const jackychang_pphs=`cn
 pphs_jackychang
-張學友
+張學友|iL_W8W2737A
 0000
 0001
 0010
@@ -133,7 +134,7 @@ pphs_jackychang
 
 export const kanhojp_pphs=`cn
 pphs_kanhojp
-寬邦日語
+寬邦日語|_afssYk-CUQ
 0001
 0001
 0034
@@ -158,7 +159,7 @@ pphs_kanhojp
 
 export const kanhozh_pphs=`cn
 pphs_kanhozh
-寬邦漢語
+寬邦漢語|v_RgAy_SY34
 0001
 0001
 0028
@@ -183,7 +184,7 @@ pphs_kanhozh
 
 export const kwanyinchanlin=`cn
 pphs_kwanyinchanlin
-韓國觀音禪林
+觀音禪林韓語|cm9wdgmC0Bs
 0013
 0013
 0019

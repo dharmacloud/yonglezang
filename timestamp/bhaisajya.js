@@ -1,6 +1,6 @@
 export const zhanyuan_bhaisajya=`cn
 bhaisajya_zhanyuan
-湛願法師
+湛願法師|YWNJUqf7YIQ
 1140
 1141
 1146
