@@ -113,11 +113,9 @@ JSZip.loadAsync(data).then(async function (zip) {
     const zipout=new JSZip();
     let extracted=null;
 
-    console.log(outfn,named)
     if (!named){
         for (let i in filerenames) {
             if (~outfn.indexOf(i)) {
-                console.log(outfn,filerenames[i])
                 outfn=filerenames[i];
                 break
             }
