@@ -65,7 +65,7 @@ const tracks={
     'vcpp_yijing':{vcpp_yijing},
     'pumen':{fgs_pumen},
     'pph':{fayewong:fayewong_pph},
-    'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,jackychang_pphs,kanhojp_pphs,kanhozh_pphs,chant_pphs,kwanyinchanlin},
+    'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,kanhojp_pphs,chant_pphs,kwanyinchanlin},
     'bhaisajya':{ddm_bhaisajya,zhanyuan_bhaisajya,bhaisajya_huiping},
     'ksitigarbha1':{ksitigarbha1},'ksitigarbha2':{ksitigarbha2},
     'sdpdrk1':{sdpdrk1},
