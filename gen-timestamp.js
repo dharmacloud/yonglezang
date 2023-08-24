@@ -2,7 +2,7 @@
 from: https://docs.google.com/spreadsheets/d/1MVVBbS60aHA1QfQrj9n9ghuUiy5rx6F1rNDBKFa2Ti8/edit#gid=532868174
 */
 import { venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,
-    vcpp_xuanzang,vcpp_yijing,
+    vcpp_xuanzang,
     vcpp_fayewong} from './timestamp/vcpp.js'
 import { fayewong_pph} from './timestamp/pph.js'
 import { fayewongzhang_pphs,sanskrit_pphs, sanskrit_pphs_sanskrit
@@ -15,20 +15,31 @@ import {fgs_pumen} from './timestamp/pumen.js'
 import {lastword} from './timestamp/lastword.js'
 import {sdpdrk1,sdpdrk2,sdpdrk3,sdpdrk4,sdpdrk5,sdpdrk6,sdpdrk7} from './timestamp/sdpdrk.js'
 import {writeChanged,nodefs} from 'ptk/nodebundle.cjs'
+import {timeStampFromJson} from './jsontimestamp.js'
 
 await nodefs
+
 const parseTime=str=>{
-    let m=0,s=0,h=0;
+    let m=0,s=0,h=0,frag=0;
     str=str.trim();
     if (~str.indexOf(':')) {
         [m,s]=str.trim().split(':');
     } else {
+        const at=str.indexOf('.');
+        if (~at) {
+            console.log(str)
+            frag=parseInt(str.slice(at+1));
+            if (frag>99) frag=99;
+            if (frag<0) frag=0;
+            str=str.slice(0,at);
+
+        }
         h=str.slice(0, str.length-4);
         m=str.slice(str.length-4,str.length-2);
         s=str.slice(str.length-2);
     }
     const t=(parseInt(h)||0)*3600+parseInt(m)*60+parseInt(s);
-    return t;
+    return t*100 + frag;
 }
 const zhout=['^:<name=timestamp preload=true>vid\tvideohost\tbookid\tperformer\ttimestamp=numbers']
 const skout=['^:<name=timestamp_sanskrit preload=true>vid\tvideohost\tbookid\tperformer\ttimestamp=numbers']
@@ -62,7 +73,7 @@ const tracks={
    'lastword':{lastword},
     'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong},
     'vcpp_xuanzang':{vcpp_xuanzang},
-    'vcpp_yijing':{vcpp_yijing},
+    //'vcpp_yijing':{vcpp_yijing},
     'pumen':{fgs_pumen},
     'pph':{fayewong:fayewong_pph},
     'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,kanhojp_pphs,chant_pphs,kwanyinchanlin},
@@ -75,7 +86,7 @@ const tracks={
     'sdpdrk5':{sdpdrk5},
     'sdpdrk6':{sdpdrk6},
     'sdpdrk7':{sdpdrk7},
-
+    'svvy': {svvy:timeStampFromJson('timestamp/svvy.json','國家級播音員|ATSZWvBxFO4')}
 }
 const sktracks={
     'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},
@@ -83,10 +94,10 @@ const sktracks={
 for (let book in tracks) {
     dump(book,tracks[book],zhout)
 }
-writeChanged('off/timestamp.tsv', zhout.join('\n') ,true)
+writeChanged('../dharmacloud/off/timestamp.tsv', zhout.join('\n') ,true)
 
 for (let book in sktracks) {
     dump(book,sktracks[book],skout)
 }
-writeChanged('off/timestamp_sanskrit.tsv', skout.join('\n') ,true)
+writeChanged('../dharmacloud/off/timestamp_sanskrit.tsv', skout.join('\n') ,true)
 

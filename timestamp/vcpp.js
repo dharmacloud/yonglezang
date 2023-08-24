@@ -2190,8 +2190,8 @@ vcpp_yijing
 4845`
 
 export const vcpp_xuanzang=`cn
-vcpp_xuanzang|aBdwfpjoeRk
-星辰
+vcpp_xuanzang
+星辰|aBdwfpjoeRk
 0022
 0028
 0035

@@ -9,7 +9,11 @@ const filenames={
     26:'agmm',
     99:'agms',
     100:'agmss',
-    125:'agmu'
+    125:'agmu',
+    361:'svv_ls',//無量清淨平等覺經
+    362:'svv_zq',//佛說阿彌陀三耶三佛薩樓佛檀過度人道經
+    363:'svv_fx',
+    310:'svv_ruci',//無量壽如來會
 }
 const replace=(sid,str)=>{
     const bkid=filenames[sid]

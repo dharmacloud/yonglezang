@@ -4,3 +4,4 @@ off
 node_modules
 *.txt
 dc
+*.ptk
