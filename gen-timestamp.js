@@ -27,7 +27,6 @@ const parseTime=str=>{
     } else {
         const at=str.indexOf('.');
         if (~at) {
-            console.log(str)
             frag=parseInt(str.slice(at+1));
             if (frag>99) frag=99;
             if (frag<0) frag=0;
@@ -86,7 +85,9 @@ const tracks={
     'sdpdrk5':{sdpdrk5},
     'sdpdrk6':{sdpdrk6},
     'sdpdrk7':{sdpdrk7},
-    'svvy': {svvy:timeStampFromJson('timestamp/svvy.json','國家級播音員|ATSZWvBxFO4')}
+    'svvy': {svvy:timeStampFromJson('timestamp/svvy.json','國家一級播音員|ATSZWvBxFO4')},
+    'svv1': {svv1:timeStampFromJson('timestamp/svv1.json','道證法師|wUjw8py5M8I')},
+    'svv2': {svv2:timeStampFromJson('timestamp/svv2.json','道證法師|0eXXOPpnfPs')}
 }
 const sktracks={
     'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},
