@@ -14,7 +14,12 @@ const filenames={
     362:'svv_zq',//佛說阿彌陀三耶三佛薩樓佛檀過度人道經
     363:'svv_fx',
     310:'svv_ruci',//無量壽如來會
-}
+    1428:'vnydg', //四分律
+    1484:'vnybss',//梵網經
+    1500:'vnybss_ksema',//菩薩戒本經北涼曇無讖
+    1501:'vnybss_xuanzang',//菩薩戒玄奘 
+    1499:'vnybsskv',//《菩薩戒羯磨文》玄奘譯
+}    
 const replace=(sid,str)=>{
     const bkid=filenames[sid]
     return str
