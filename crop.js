@@ -10,9 +10,6 @@ await nodefs;
 11942811_46 ， 000012.jpg 000013.jpg 重覆
 */
 const allinserts={
-//     'vnydg7':{41:['vnydg7-41.png','vnydg7-42.png','vnydg7-43.png',
-// 'vnydg7-44.png','vnydg7-45.png','vnydg7-46.png','vnydg7-47.png','vnydg7-48.png'
-// ,'vnydg7-49.png','vnydg7-50.png']},
     'svv1':{73:['svv1-073.jpg','svv1-074.jpg','svv1-075.jpg']},
     'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] },
     'agmm13':{ 82:['agmm13-082.jpg','agmm13-083.jpg','agmm13-084.jpg','agmm13-085.jpg','agmm13-086.jpg','agmm13-087.jpg','agmm13-088.jpg'] }
