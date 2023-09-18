@@ -1,6 +1,6 @@
 import {readTextLines, writeChanged,nodefs, fromObj, alphabetically0} from 'ptk/nodebundle.cjs'
 await nodefs;
-
+const outdir=process.argv[2]||"off"
 const dictentries=[
 {csv:'dc-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
 {csv:'dc-fgdzd.csv',flag:2},
@@ -21,5 +21,5 @@ dictentries.forEach(e=>{
 
 const arr=fromObj(out,(a,b)=>[a,b]).filter(it=>it[1]>1).sort(alphabetically0).map(it=>it[0]+'\t'+it[1]);
 arr.unshift('^:<name=entries preload=true>key	dict=number')
-writeChanged('off/zentries.tsv',arr.join('\n'),true);
+writeChanged(outdir+'/zentries.tsv',arr.join('\n'),true);
 

@@ -1,0 +1,13 @@
+^:<ptk=ylz-m zh=永樂藏 en=ylz-m lang=zh align=ylz>
+^:au<bracket=false>
+^:pb<id=unique resetby=bk>
+^:r<id=unique resetby=bk>
+^:folio<id=unique reset=pb lines=number bracket=false>
+^:lb
+^:gatha
+^:m<id=unique resetby=ck>
+^:e<id=unique>
+^:cb<id=unique resetby=bk>
+^:missing<t=text>
+^:mc
+^:cbmiss
