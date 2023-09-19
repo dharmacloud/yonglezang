@@ -19,6 +19,7 @@ const filenames={
     1500:'vnybss_ksema',//菩薩戒本經北涼曇無讖
     1501:'vnybss_xuanzang',//菩薩戒玄奘 
     1499:'vnybsskv',//《菩薩戒羯磨文》玄奘譯
+    1909:'mettaksama',
 }    
 const replace=(sid,str)=>{
     const bkid=filenames[sid]

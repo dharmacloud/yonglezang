@@ -5,8 +5,10 @@ node_modules
 *.txt
 dc
 *.ptk
-ylz-m
-ylz-c
+ylz-tg
+ylz-prjn
 ylz-vny
 ylz-svk
 ylz
+ylz-*.off
+*.tsv
