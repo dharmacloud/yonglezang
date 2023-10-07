@@ -46,6 +46,7 @@ export const tracks={
        //count page
        tracks[prefix+i]=obj
        allfoliocount+=foliocount;
+       console.log(prefix+i,foliocount)
     }
     console.log('foliocount',allfoliocount)
  }
