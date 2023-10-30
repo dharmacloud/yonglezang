@@ -12,7 +12,7 @@ import {fgs_pumen} from './timestamp/pumen.js'
 import {lastword} from './timestamp/lastword.js'
 import {sdpdrk1,sdpdrk2,sdpdrk3,sdpdrk4,sdpdrk5,sdpdrk6,sdpdrk7} from './timestamp/sdpdrk.js'
 import {timeStampFromJson} from './jsontimestamp.js'
-
+import {existsSync} from 'fs'
 export const tracks={
     'amtb_xuanzang':{xincheng_amtb_xuanzang},
     'amtb':{amtb_china},
@@ -41,7 +41,9 @@ export const tracks={
     let allfoliocount=0;
     for (let i=1;i<=max;i++) {
        const obj=[];
-        const {timestamp,foliocount}=timeStampFromJson('timestamp/agama/agmd'+i+'.json','誦讀|');
+       const fn='timestamp/agama/'+prefix+i+'.json';
+       if (!existsSync(fn)) continue;
+       const {timestamp,foliocount}=timeStampFromJson(fn,'誦讀|');
        obj[prefix+i]=timestamp;
        //count page
        tracks[prefix+i]=obj
@@ -50,8 +52,9 @@ export const tracks={
     }
     console.log('foliocount',allfoliocount)
  }
-
  multijuan('agmd',22)
+ multijuan('agmm',60)
+ 
 export const sktracks={
      'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},
  }

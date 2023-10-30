@@ -31,7 +31,6 @@ const skout=['^:<name=timestamp_sanskrit preload=true>vid\tvideohost\tbookid\tpe
 const dump=(book,_tracks,out)=>{
     let prev=0;
     for (let n in _tracks) {
-        
         const lines=_tracks[n].split(/\r?\n/);
         const videohost=lines.shift();
         const audioid=lines.shift();
@@ -46,7 +45,7 @@ const dump=(book,_tracks,out)=>{
         for (let j=1;j<lines.length;j++) {
             const t=parseTime(lines[j]);
             if (t<prev) {
-                throw "wrong time stamp "+lines[j]+' t=' +t+ ' previous '+lines[j-1]+ ' t='+prev;
+                throw n+' line:'+j+ " wrong time stamp "+lines[j]+' t=' +t+ ' previous '+lines[j-1]+ ' t='+prev;
             }
             times.push(t);
             prev=t;
@@ -59,10 +58,12 @@ const dump=(book,_tracks,out)=>{
 
 for (let book in tracks) {
     dump(book,tracks[book],zhout)
+    
 }
 writeChanged('../dharmacloud/off/timestamp.tsv', zhout.join('\n') ,true)
 
 for (let book in sktracks) {
+    
     dump(book,sktracks[book],skout)
 }
 writeChanged('../dharmacloud/off/timestamp_sanskrit.tsv', skout.join('\n') ,true)
