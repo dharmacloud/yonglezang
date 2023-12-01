@@ -52,8 +52,9 @@ export const tracks={
     }
     console.log('foliocount',allfoliocount)
  }
- multijuan('agmd',22)
- multijuan('agmm',60)
+//  multijuan('agmd',22)
+//  multijuan('agmm',60)
+ multijuan('agms',50)
  
 export const sktracks={
      'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},
