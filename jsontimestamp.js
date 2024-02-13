@@ -8,7 +8,7 @@ const tofix=ts=>{
 
     return (hour?hour:'')+minutes.toString().padStart(2,'0')+seconds.toString().padStart(2,'0')+'.'+frag.slice(2);
 }
-export const timeStampFromJson=(fn,title)=>{   
+export const timeStampFromJson=(fn,title,fn2)=>{   
     const json=JSON.parse(readFileSync(fn,'utf8'));
     const out=['cn',json.audio,title];
     let lines=parseInt(json.foliolines)||5;
@@ -28,6 +28,7 @@ export const timeStampFromJson=(fn,title)=>{
             //continue;
         }
         if (!timestamp.length) {
+            console.log(title,fn2)
             throw "empty data"
         }
         let prev=0;

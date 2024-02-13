@@ -47,8 +47,10 @@ export const tracks={
     for (let i=1;i<=max;i++) {
        const obj=[];
        const fn='timestamp/agama/'+prefix+i+'.json';
+       
        if (!existsSync(fn)) continue;
-       const {timestamp,foliocount}=timeStampFromJson(fn,'誦讀|');
+       
+       const {timestamp,foliocount}=timeStampFromJson(fn,'誦讀|',prefix+i);
        obj[prefix+i]=timestamp;
        //count page
        tracks[prefix+i]=obj
@@ -58,11 +60,11 @@ export const tracks={
     console.log('foliocount',allfoliocount)
  }
  multijuan('agmd',22)
- multijuan('agmm',60)
+multijuan('agmm',60)
  multijuan('agms',50)
 
  //not yet
- //multijuan('agma',51)
+ multijuan('agmu',50)
  
 export const sktracks={
      'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},
