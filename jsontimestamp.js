@@ -10,7 +10,7 @@ const tofix=ts=>{
 }
 export const timeStampFromJson=(fn,title)=>{   
     const json=JSON.parse(readFileSync(fn,'utf8'));
-    const out=['cn',json.folio,title];
+    const out=['cn',json.audio,title];
     let lines=parseInt(json.foliolines)||5;
 
     //remove tailing null data

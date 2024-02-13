@@ -34,7 +34,12 @@ export const tracks={
      'sdpdrk7':{sdpdrk7},
      //'svvy': {svvy:timeStampFromJson('timestamp/svvy.json','國家一級播音員|ATSZWvBxFO4')},
       'svv1': {svv1:timeStampFromJson('timestamp/svv1.json','道證法師|wUjw8py5M8I').timestamp},
-      'svv2': {svv2:timeStampFromJson('timestamp/svv2.json','道證法師|0eXXOPpnfPs').timestamp}
+      'svv2': {svv2:timeStampFromJson('timestamp/svv2.json','道證法師|0eXXOPpnfPs').timestamp},
+
+      'ylp': {
+        ylp_male:timeStampFromJson('timestamp/ylp_male.json','男聲').timestamp,
+        ylp_female:timeStampFromJson('timestamp/ylp_female.json','女聲').timestamp
+    }
      
  }
  const multijuan=(prefix,max)=>{
@@ -52,9 +57,12 @@ export const tracks={
     }
     console.log('foliocount',allfoliocount)
  }
-//  multijuan('agmd',22)
-//  multijuan('agmm',60)
+ multijuan('agmd',22)
+ multijuan('agmm',60)
  multijuan('agms',50)
+
+ //not yet
+ //multijuan('agma',51)
  
 export const sktracks={
      'pphs':{sanskrit_pphs_sanskrit,sanskrit_pphs_sanskrit2:sanskrit_pphs_sanskrit},

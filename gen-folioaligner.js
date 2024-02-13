@@ -20,6 +20,7 @@ const filenames={
     1501:'vnybss_xuanzang',//菩薩戒玄奘 
     1499:'vnybsskv',//《菩薩戒羯磨文》玄奘譯
     1909:'mettaksama',
+    685:'ylp',//盂蘭盆經
 }    
 const replace=(sid,str)=>{
     const bkid=filenames[sid]

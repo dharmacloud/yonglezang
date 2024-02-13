@@ -2,9 +2,13 @@ import {readTextLines, writeChanged,nodefs, fromObj, alphabetically0} from 'ptk/
 await nodefs;
 const outdir=process.argv[2]||"off"
 const dictentries=[
-{csv:'dc-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
-{csv:'dc-fgdzd.csv',flag:2},
-{csv:'dc-dfb.csv',flag:4},
+// {csv:'dc-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
+// {csv:'dc-fgdzd.csv',flag:2},
+// {csv:'dc-dfb.csv',flag:4},
+
+{csv:'ylz-rite-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
+{csv:'ylz-rite-fgdcd.csv',flag:2},
+{csv:'ylz-rite-dfb.csv',flag:4},
 ]
 const out={};
 dictentries.forEach(e=>{

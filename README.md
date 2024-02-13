@@ -11,6 +11,9 @@ ytdl -q lowest https://youtube.com/watch?v=6SPgY9y4S2c | ffmpeg -i pipe:0 -b:a 9
 https://www.youtube.com/watch?v=syRat0n6KA4&list=PL3bUKE0GLF5I3r-DqcAmr0X8XyeiZg5BX
 
 
+node crop 產生 ylz 使用的 zip ，每卷一個
+
+node gen-dictentry ptkname
 
 
 # update time stamp and copy to dharmacloud
