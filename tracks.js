@@ -17,8 +17,11 @@ export const tracks={
     'amtb_xuanzang':{xincheng_amtb_xuanzang},
     'amtb':{amtb_china},
     'lastword':{lastword},
-     'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong},
+     'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong, vcpp_daolang
+        :timeStampFromJson('timestamp/vcpp_daolang.json','刀朗|yiqyx1sllU8').timestamp
+	        },
      'vcpp_xuanzang':{vcpp_xuanzang},
+        
      //'vcpp_yijing':{vcpp_yijing},
      'pumen':{fgs_pumen},
      'pph':{fayewong:fayewong_pph},
