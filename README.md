@@ -17,7 +17,7 @@ node gen-dictentry ptkname
 
 
 # update time stamp and copy to dharmacloud
-build-timestamp.cmd
+node gen-timestamp
 
 #prepare for folioaligner
 

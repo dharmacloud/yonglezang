@@ -16,31 +16,35 @@ import {existsSync} from 'fs'
 export const tracks={
     'amtb_xuanzang':{xincheng_amtb_xuanzang},
     'amtb':{amtb_china,
-    	 amtb_yuanguang   :timeStampFromJson('timestamp/amtb_yuanguang.json','圓光佛學院|5O_D-KXOclw').timestamp
+    	 //amtb_yuanguang   :timeStampFromJson('timestamp/amtb_yuanguang.json','圓光佛學院|5O_D-KXOclw').timestamp
     	 	 },
     'lastword':{lastword},
      'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong, 
      vcpp_daolang   :timeStampFromJson('timestamp/vcpp_daolang.json','刀郎|yiqyx1sllU8').timestamp,
-        vcpp_yuanguang:timeStampFromJson('timestamp/vcpp_yuanguang.json','圓光佛學院|hT928y_BJaM').timestamp,
+        //vcpp_yuanguang:timeStampFromJson('timestamp/vcpp_yuanguang.json','圓光佛學院|hT928y_BJaM').timestamp,
         vcpp_korean:timeStampFromJson('timestamp/vcpp_korean.json','韓語|MiNt-iGZLJU').timestamp
 	        },
      'vcpp_xuanzang':{vcpp_xuanzang},
         
      //'vcpp_yijing':{vcpp_yijing},
      'pumen':{fgs_pumen,
-     	 pumen_yuanguang   :timeStampFromJson('timestamp/pumen_yuanguang.json','圓光佛學院|2wgFgcp2G6M').timestamp
+     	 //pumen_yuanguang   :timeStampFromJson('timestamp/pumen_yuanguang.json','圓光佛學院|2wgFgcp2G6M').timestamp
      	 },
      'pph':{fayewong:fayewong_pph},
      'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,kanhojp_pphs,chant_pphs,kwanyinchanlin,
-     	pphs_yuanguang   :timeStampFromJson('timestamp/pphs_yuanguang.json','圓光佛學院|90iNpAqlW7E').timestamp },
+     	//pphs_yuanguang   :timeStampFromJson('timestamp/pphs_yuanguang.json','圓光佛學院|90iNpAqlW7E').timestamp 
+        //
+     },
+
      'bhaisajya':{ddm_bhaisajya,zhanyuan_bhaisajya,bhaisajya_huiping,
-     		bhaisajya_yuanguang   :timeStampFromJson('timestamp/bhaisajya_kaisong.json','開松法師|PqhMhc6ColY').timestamp }
-	     		},
-     'ksitigarbha1':{ksitigarbha1,
-    ksitigarbha1_daguan   :timeStampFromJson('timestamp/ksitigarbha1_daguan.json','達觀法師|HNzFidHtoMk').timestamp }
-	},'ksitigarbha2':{ksitigarbha2,
-             ksitigarbha2_daguan   :timeStampFromJson('timestamp/ksitigarbha2_daguan.json','達觀法師|HNzFidHtoMk').timestamp }
+     		//bhaisajya_yuanguang :timeStampFromJson('timestamp/bhaisajya_kaisong.json','開松法師|PqhMhc6ColY').timestamp 
 	},
+    'ksitigarbha1': {ksitigarbha1,
+     //ksitigarbha1_daguan:timeStampFromJson('timestamp/ksitigarbha1_daguan.json','達觀法師|HNzFidHtoMk').timestamp 
+	},'ksitigarbha2':{ksitigarbha2,
+           //  ksitigarbha2_daguan   :timeStampFromJson('timestamp/ksitigarbha2_daguan.json','達觀法師|HNzFidHtoMk').timestamp 
+    } ,
+	
      	
      'sdpdrk1':{sdpdrk1},
      'sdpdrk2':{sdpdrk2},
