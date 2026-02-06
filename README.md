@@ -1,11 +1,30 @@
 # yonglezang
 crop and text data of yonglezang
 
-download mp3
+雷電模擬器，安裝listenbuddha ，下載音頻。
+到
+/Android/data/com.anagyris.listenbuddha/files/listenbuddha/
 
+        27 80華嚴 
+        218 60華嚴
+        220 40華嚴
+                	  	
+                	  	https://www.bilibili.com/video/BV1jWU1B5Eef 《华严经》八十一卷朗读|佛学大百科全书
+                	  	 
+bbdown https://github.com/nilaoda/BBDown
 
-
-ytdl -q lowest https://youtube.com/watch?v=6SPgY9y4S2c | ffmpeg -i pipe:0 -b:a 96k -vn amtb.mp3
+// ytdl -q lowest https://youtube.com/watch?v=6SPgY9y4S2c | ffmpeg -i pipe:0 -b:a 96k -vn amtb.mp3
+ 
+ yt-dlp -x --audio-format mp3 https://www.youtube.com/watch?v=V48A3ywtDhA
+ 
+ 八十華嚴 
+ PL5mY1XCsdSVy6tC16WlVjB_fSdNngUHqg 靈鳩山
+ PLg3q2awPTc5PKeDHtabbILWLUHPYtQCak 寶嚴僧團
+ PLGodOajVZc0VwjNeozSRqnYJ3PJghEHNq  慧平法師
+ 
+ 四十華嚴
+ PL4NaCqb0Q8vfTYIEzwVMdB319APnpurRg 萬璐 
+ 
 
 # 梁皇寶籤
 https://www.youtube.com/watch?v=syRat0n6KA4&list=PL3bUKE0GLF5I3r-DqcAmr0X8XyeiZg5BX
