@@ -62,11 +62,11 @@ for (let book in tracks) {
     dump(book,tracks[book],zhout)
     
 }
-writeChanged('../dharmacloud/off/timestamp.tsv', zhout.join('\n') ,true)
+writeChanged('../dharmacloud/dc.offtext/timestamp.tsv', zhout.join('\n') ,true)
 
 for (let book in sktracks) {
     
     dump(book,sktracks[book],skout)
 }
-writeChanged('../dharmacloud/off/timestamp_sanskrit.tsv', skout.join('\n') ,true)
+writeChanged('../dharmacloud/dc.offtext/timestamp_sanskrit.tsv', skout.join('\n') ,true)
 

@@ -6,10 +6,12 @@ const dictentries=[
 // {csv:'dc-fgdzd.csv',flag:2},
 // {csv:'dc-dfb.csv',flag:4},
 
-{csv:'ylz-rite-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
-{csv:'ylz-rite-fgdcd.csv',flag:2},
-{csv:'ylz-rite-dfb.csv',flag:4},
+{csv:'ylz-wikipedia.csv',flag:1} ,//create by ptk listwords dc-dump.txt zhwikiepdia
+{csv:'ylz-fgdzd.csv',flag:2},
+{csv:'ylz-dfb.csv',flag:4},
 ]
+
+
 const out={};
 dictentries.forEach(e=>{
     const data=readTextLines(e.csv);

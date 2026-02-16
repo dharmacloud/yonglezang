@@ -3,7 +3,7 @@ import { venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,
     vcpp_fayewong} from './timestamp/vcpp.js'
 import { fayewong_pph} from './timestamp/pph.js'
 import { fayewongzhang_pphs,sanskrit_pphs, sanskrit_pphs_sanskrit
-    ,jackychang_pphs,kanhojp_pphs,kanhozh_pphs,chant_pphs,kwanyinchanlin} from './timestamp/pphs.js'
+    ,jackychang_pphs,kanhojp_pphs,kanhozh_pphs,chant_pphs,kwanyinchanlin   } from './timestamp/pphs.js'
 import {ddm_bhaisajya,zhanyuan_bhaisajya, bhaisajya_huiping} from './timestamp/bhaisajya.js'
 import {xincheng_amtb_xuanzang} from './timestamp/amtb_xuanzang.js'
 import {amtb_china} from './timestamp/amtb.js'
@@ -34,6 +34,8 @@ export const tracks={
      'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,kanhojp_pphs,chant_pphs,kwanyinchanlin,
      	//pphs_yuanguang   :timeStampFromJson('timestamp/pphs_yuanguang.json','圓光佛學院|90iNpAqlW7E').timestamp 
         //
+        pphs_ulucitta:timeStampFromJson('timestamp/pphs_ulucitta.json','湛覺|NactFrpGm-0').timestamp
+
      },
 
      'bhaisajya':{ddm_bhaisajya,zhanyuan_bhaisajya,bhaisajya_huiping,
