@@ -14,8 +14,11 @@ const allinserts={
     'agms32':{ 67:['agms32-067.jpg','agms32-068.jpg'] },
     'agmm13':{ 82:['agmm13-082.jpg','agmm13-083.jpg','agmm13-084.jpg','agmm13-085.jpg','agmm13-086.jpg','agmm13-087.jpg','agmm13-088.jpg'] }
 }
-const tempdir="A:/crop/"
-const deffile='./vcpp-yongle-versions/0010a-001羽08.zip'
+const tempdir="z:/crop/"
+const deffile='1650-031扶01.zip'
+const cropfolder='./allfoliocrop/'
+const zipfolder='e:/yonglebeizang-shangtong/'; //folder consist
+const outfolder='../ylz/dist/folio/'
 
 let input=(process.argv[2]||deffile).replace('.json','.zip')//'E:/yongle-bei-3400/11864611_14普門品/'
 let named=false;//name specified in json filename
@@ -25,13 +28,16 @@ if (at2==-1) at2=input.lastIndexOf('\\');
 let outfn=input.slice(at2+1).replace('.zip','');
 
 
-let  cropfile=input.replace('.zip','')+'.json';
+let  cropfile=cropfolder+input.replace('.zip','.json');
+
 const at=input.indexOf('-');//json specific name
 if (~at && input.match(/\-[a-z]/)) {
     outfn=input.match(/\-([^\.]+)/)[1]
     input=input.replace(/\-[^\.]+/,'');
     named=true;
 }
+
+input=zipfolder+input;
 
 
 const tasks=JSON.parse(readTextContent(cropfile));
@@ -165,9 +171,9 @@ JSZip.loadAsync(data).then(async function (zip) {
 
 
     zipout.generateNodeStream({type:'nodebuffer',streamFiles:true,compression: "STORE"})
-    .pipe(fs.createWriteStream(outfn+'.zip'))
+    .pipe(fs.createWriteStream(outfolder+outfn+'.zip'))
     .on('finish', function () {
-         console.log('done output ',outfn+'.zip')
+         console.log('done output ',outfolder+outfn+'.zip')
     });
 
 
@@ -176,8 +182,8 @@ JSZip.loadAsync(data).then(async function (zip) {
 //    const cmd2='ffmpeg -r 1 -i '+tempdir+'%03d.jpg -b:v 512k -crf 40 -an  -x264opts keyint=1 -f mp4 -movflags +faststart -pix_fmt yuv420p -vf format=yuv420p -preset slow -profile:v main -level 3.0 '+outfn+'.mp4'
 
     //const cmd='ffmpeg -r 1 -i '+tempdir+'%03d.jpg -x265-params "crf=40:keyint=1"  -an -c:v libx265 -vtag hvc1 -vprofile main  -f mp4 -movflags +faststart -pix_fmt yuv420p  '+outfn+'.mp4'
-    console.log('exec command: ',cmd)
-     console.log('exec command: ',cmd2)
+//    console.log('exec command: ',cmd)
+//     console.log('exec command: ',cmd2)
 //    await runCommand(cmd)
 
 });
