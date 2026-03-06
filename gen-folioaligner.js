@@ -8,6 +8,12 @@ const filenames={
     1:'agmd',
     26:'agmm',
     99:'agms',
+    220:'mpp',//大般若
+    221:'ahbapp',//放光般若
+    223:'mhpp',//摩訶般若
+    278:'avts_sixty',//華嚴
+    279:'avts_eighty',
+    293:'avts_fourty',
     100:'agmss',
     125:'agmu',
     361:'svv_ls',//無量清淨平等覺經
@@ -21,6 +27,7 @@ const filenames={
     1499:'vnybsskv',//《菩薩戒羯磨文》玄奘譯
     1909:'mettaksama',
     685:'ylp',//盂蘭盆經
+    842:'purnabodhi',//圓覺經
 }    
 const replace=(sid,str)=>{
     const bkid=filenames[sid]
@@ -33,6 +40,7 @@ if (!filenames[sid]) {
     console.log('unknown sutra',sid)
 } else {
     const [vol]=meta_cbeta.TaishoPageFromJuan(sid);
+    // https://github.com/accelon/cb-t
     const content=readTextContent('../cb-t/off/T'+vol.toString().padStart(2,'0')+".off");
     const start=content.indexOf('^bk'+sid);
     let end=content.indexOf('^bk'+(sid+1));

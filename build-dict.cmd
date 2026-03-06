@@ -37,3 +37,14 @@ copy/Y ylz-prjn.off-listwords.csv ylz-fgdzd.csv
 cmd/c ptk listwords ylz-prjn.off dfb-entries.txt
 copy/Y ylz-prjn.off-listwords.csv ylz-dfb.csv
 node gen-dictentry.js ylz-prjn.offtext
+
+
+cmd/c ptk js ylz-avts
+cmd/c ptk dump ylz-avts ylz-avts.off
+cmd/c ptk listwords ylz-avts.off zhwiki-20230701-pages-articles-multistream-index.txt
+copy/Y ylz-avts.off-listwords.csv ylz-wikipedia.csv
+cmd/c ptk listwords ylz-avts.off fgdcd-entries.txt
+copy/Y ylz-avts.off-listwords.csv ylz-fgdzd.csv
+cmd/c ptk listwords ylz-prjn.off dfb-entries.txt
+copy/Y ylz-avts.off-listwords.csv ylz-dfb.csv
+node gen-dictentry.js ylz-avts.offtext

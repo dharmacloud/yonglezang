@@ -1,3 +1,4 @@
+cmd/c ptk ptk ylz-avts
 cmd/c ptk ptk ylz-tg
 cmd/c ptk ptk ylz-prjn
 cmd/c ptk ptk ylz-vny

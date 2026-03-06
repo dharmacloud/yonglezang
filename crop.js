@@ -90,8 +90,6 @@ const dotask=async (buf,frame,nth,adjx,adjy,zipout)=>{
     }
 }
 
-
-
 const data=fs.readFileSync(input);
 async function runCommand(command) {
     const { stdout, stderr, error } = await exec(command);
@@ -105,7 +103,6 @@ async function runCommand(command) {
 }
 
 JSZip.loadAsync(data).then(async function (zip) {
-    
     const images={};
     for (let zipfile in zip.files) {
         if (zip.files[zipfile].dir)continue;
