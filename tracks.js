@@ -34,9 +34,10 @@ export const tracks={
      'pphs':{fayewongzhang:fayewongzhang_pphs,sanskrit_pphs,kanhojp_pphs,chant_pphs,kwanyinchanlin,
      	//pphs_yuanguang   :timeStampFromJson('timestamp/pphs_yuanguang.json','圓光佛學院|90iNpAqlW7E').timestamp 
         //
-        pphs_ulucitta:timeStampFromJson('timestamp/pphs_ulucitta.json','湛覺|NactFrpGm-0').timestamp
-
-     },
+        pphs_ulucitta:timeStampFromJson('timestamp/pphs_ulucitta.json','湛覺|NactFrpGm-0').timestamp,
+        pphs_minnan:timeStampFromJson('timestamp/pphs_minnan.json','閩南語合誦|NactFrpGm-0').timestamp,
+	    pphs_minnansolo:timeStampFromJson('timestamp/pphs_minnansolo.json','閩南語|NactFrpGm-0').timestamp
+      },
 
      'bhaisajya':{ddm_bhaisajya,zhanyuan_bhaisajya,bhaisajya_huiping,
      		//bhaisajya_yuanguang :timeStampFromJson('timestamp/bhaisajya_kaisong.json','開松法師|PqhMhc6ColY').timestamp 
