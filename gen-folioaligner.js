@@ -1,4 +1,4 @@
-import {meta_cbeta, readTextLines, writeChanged,nodefs, fromObj, alphabetically0, readTextContent} from 'ptk/nodebundle.cjs'
+import {meta_cbeta,  writeChanged,nodefs,  readTextContent} from 'ptk/nodebundle.cjs'
 await nodefs;
 /* generate off format for folioaligner*/
 /* not cb-t\gen.js to get T01. T02 */
@@ -14,6 +14,10 @@ const filenames={
     278:'avts_sixty',//華嚴
     279:'avts_eighty',
     293:'avts_fourty',
+    262:'sdp',//法華經
+    263:'sdps',//正法華經
+    264:'sdpa',//添品
+
     100:'agmss',
     125:'agmu',
     361:'svv_ls',//無量清淨平等覺經

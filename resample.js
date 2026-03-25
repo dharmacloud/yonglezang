@@ -5,7 +5,6 @@ resample inputfolder [outputzip]
 import JSZip from 'jszip'
 import sharp  from "sharp";
 import {glob,nodefs, writeChanged} from "ptk/nodebundle.cjs"
-import path from "node:path";
 
 await nodefs;
 
