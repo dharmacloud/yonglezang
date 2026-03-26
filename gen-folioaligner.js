@@ -44,6 +44,7 @@ if (!filenames[sid]) {
     console.log('unknown sutra',sid)
 } else {
     const [vol]=meta_cbeta.TaishoPageFromJuan(sid);
+    
     // https://github.com/accelon/cb-t
     const content=readTextContent('../cb-t/off/T'+vol.toString().padStart(2,'0')+".off");
     const start=content.indexOf('^bk'+sid);
