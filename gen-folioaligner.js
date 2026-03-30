@@ -11,9 +11,9 @@ const filenames={
     220:'mpp',//大般若
     221:'ahbapp',//放光般若
     223:'mhpp',//摩訶般若
-    278:'avts_sixty',//華嚴
-    279:'avts_eighty',
-    293:'avts_fourty',
+    278:'avtssixty',//華嚴
+    279:'avtseighty',
+    293:'avtsfourty',
     262:'sdp',//法華經
     263:'sdps',//正法華經
     264:'sdpa',//添品

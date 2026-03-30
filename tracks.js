@@ -22,7 +22,8 @@ export const tracks={
      'vcpp':{venxinding,dharmadrum,venjianhui,jiangxun,yangdeshi,vcpp_fayewong, 
      vcpp_daolang   :timeStampFromJson('timestamp/vcpp_daolang.json','刀郎|yiqyx1sllU8').timestamp,
         //vcpp_yuanguang:timeStampFromJson('timestamp/vcpp_yuanguang.json','圓光佛學院|hT928y_BJaM').timestamp,
-        vcpp_korean:timeStampFromJson('timestamp/vcpp_korean.json','韓語|MiNt-iGZLJU').timestamp
+        vcpp_korean:timeStampFromJson('timestamp/vcpp_korean.json','韓語|MiNt-iGZLJU').timestamp,
+//        vcpp_nova:timeStampFromJson('timestamp/vcpp_nova.json','輕音樂').timestamp,//https://www.bilibili.com/video/BV1oqfbBdEqr
 	        },
      'vcpp_xuanzang':{vcpp_xuanzang},
         

@@ -18,7 +18,7 @@ for (let i=0;i<lines.length;i++) {
     if (m){
         if (out.length) flush();
         outfn=m[1];
-        l='^pb1'+lines[i]
+        l=lines[i]
     }
     out.push(l);
 }
