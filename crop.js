@@ -108,7 +108,8 @@ JSZip.loadAsync(data).then(async function (zip) {
         if (zip.files[zipfile].dir)continue;
         const buf = await zip.file(zipfile).async("arraybuffer");
         const at=zipfile.indexOf('/');
-        const filename=zipfile.slice(at+1);
+        const at2=zipfile.indexOf('\\');
+        let filename=~at?zipfile.slice(at+1):zipfile.slice(at2+1);
         images[filename]=buf
         // await dotask(buf);
     }
@@ -128,6 +129,7 @@ JSZip.loadAsync(data).then(async function (zip) {
 
     const inserts=allinserts[outfn];
     let insertcount=0;
+    
     for (let i=0;i<tasks.length;i++) {
         const {name, frames,rotate} =tasks[i];
         const png=images[name];
