@@ -91,6 +91,7 @@ const dotask=async (buf,frame,nth,adjx,adjy,zipout)=>{
 }
 
 const data=fs.readFileSync(input);
+
 async function runCommand(command) {
     const { stdout, stderr, error } = await exec(command);
     if(stderr){

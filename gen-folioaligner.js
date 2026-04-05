@@ -2,13 +2,15 @@ import {meta_cbeta,  writeChanged,nodefs,  readTextContent} from 'ptk/nodebundle
 await nodefs;
 /* generate off format for folioaligner*/
 /* not cb-t\gen.js to get T01. T02 */
-const sid=parseInt(process.argv[2])||1
+let sid=process.argv[2]||1
 
 const filenames={
     1:'agmd',
     26:'agmm',
     99:'agms',
     220:'mpp',//大般若
+    '220a':'mpp201',//大般若
+    '220b':'mpp401',//大般若
     221:'ahbapp',//放光般若
     223:'mhpp',//摩訶般若
     278:'avtssixty',//華嚴
@@ -40,19 +42,26 @@ const replace=(sid,str)=>{
     .replace(/\^h<o=(translator|author)>(.+)\n/g,"^au〔$2〕\n")
     .replace(/\^ck(\d+)【卷\d+】.*\n/g,(m,m1)=>"^pb1^folio#"+bkid+m1+"\n")
 }
+
 if (!filenames[sid]) {
     console.log('unknown sutra',sid)
 } else {
-    const [vol]=meta_cbeta.TaishoPageFromJuan(sid);
+    let juan=1;
+    
+    if (sid=='220a') {sid=220;juan=201;}
+    if (sid=='220b') {sid=220;juan=401;}
+    const [vol]=meta_cbeta.TaishoPageFromJuan(sid,juan);
     
     // https://github.com/accelon/cb-t
     const content=readTextContent('../cb-t/off/T'+vol.toString().padStart(2,'0')+".off");
-    const start=content.indexOf('^bk'+sid);
+    
+    let start=content.indexOf('^bk'+sid);
+    if (start==-1 && sid==220) start=0;
     let end=content.indexOf('^bk'+(sid+1));
     if (end==-1) end=content.length;
     
     let sutratext=replace(sid,content.slice(start,end));
-
+//    console.log(sid,juan,vol,sutratext.length,start,end)
     writeChanged(filenames[sid]+'.ori.off',sutratext,true);
 }
 
