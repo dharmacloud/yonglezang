@@ -11,7 +11,7 @@ await nodefs;
 let folder=process.argv[2]||".";
 let outfile=process.argv[3]||".";
 
-const files=glob(folder,".jpg");
+const files=glob(folder,".jpg").concat(glob(folder,".png"));
 const W=720;
 const H=1600;
 const fit='fill';//contain'
@@ -30,7 +30,7 @@ for (let i=0;i<files.length;i++) {
     const buf=await dofile(fn)
     if (outfile) {
         process.stdout.write('\r'+(i+1)+'/'+files.length)
-        zipout.file(files[i],buf,{compression: "STORE"});
+        zipout.file(files[i].replace('.png','.jpg'),buf,{compression: "STORE"});
     } else {
         writeChanged(outfolder+files[i],buf,true)
     }
