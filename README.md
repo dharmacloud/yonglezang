@@ -1,6 +1,8 @@
 # yonglezang
 crop and text data of yonglezang
 
+install https://www.npmjs.com/package/pdf-to-img
+
 雷電模擬器，安裝listenbuddha ，下載音頻。
 到
 /Android/data/com.anagyris.listenbuddha/files/listenbuddha/
