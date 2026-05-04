@@ -7,6 +7,8 @@ export const filerenames={
     '0010c-001羽10':'vcpp_paramartha',
     '0010b-001羽09':'vcpp_bodhiruci',
 
+    '0759-001當08':'filialpeity',
+
     '0166-001惟01':'bhaisajya_gupta',
     '0167-001惟02':'bhaisajya',
     '0163-006恭06':'bhaisajya_srimitra',//from folio 20, chapter 12
