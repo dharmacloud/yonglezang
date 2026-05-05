@@ -1,0 +1,73 @@
+{
+  "lastword": [
+    {
+      "title": "見輝法師",
+      "audio": "lastword",
+      "youtube": "Mbxd5YUz8sw"
+    }
+  ],
+  "vcpp": [
+    { "title":"刀郎","audio":"vcpp_daolang"},
+    { "title": "心定法師","audio": "vcpp_xinding","youtube": "m9ZmMrY88qE" },
+    { "title": "蔣勳", "audio": "vcpp_jiangxun",  "youtube": "wjvwySjCVoQ" },
+    { "title": "王菲","audio": "vcpp_fayewong","youtube": "XpROd_PKBb0"},
+    { "title": "法鼓山","audio": "vcpp_ddm", "youtube": "RquHJ4jzXKs"},
+    { "title": "見輝法師","audio": "vcpp_jianhui","youtube": "z-IpOREVDHo"},
+    { "title": "養德禪寺", "audio": "vcpp_yangdeshi", "youtube": "5C4INS3hK40"    },
+    { "title": "星辰", "audio": "vcpp_xuanzang", "youtube": "aBdwfpjoeRk" },
+    { "title":"觀音禪林韓語","audio":"vcpp_korean"}
+  ],
+  "pph": [
+    {
+      "title": "王菲朗誦",
+      "audio": "pph",
+      "youtube": "n7ehR3iVBLg"
+    }
+  ],
+  "pphs": [
+    { "title": "湛覺", "audio": "pphs_ulucitta"},
+    { "title": "閩南語", "audio": "pphs_minnan"},
+    { "title": "王菲粵語", "audio": "pphs_fayewong", "youtube": "P5HI-Yw7Aao" },
+    { "title": "般禪梵唱", "audio": "pphs_sanskrit", "youtube": "bDOcp6uk584" },
+    { "title": "張學友",  "audio": "pphs_jackychang",  "youtube": "iL_W8W2737A" },
+    { "title": "寬邦日語", "audio": "pphs_kanhojp",  "youtube": "_afssYk-CUQ" },
+    { "title": "寬邦漢語", "audio": "pphs_kanhozh", "youtube": "v_RgAy_SY34"  },
+    { "title": "課誦", "audio": "pphs_chant",  "youtube": "7OXGM0CArAw" },
+    { "title": "觀音禪林韓語", "audio": "pphs_kwanyinchanlin", "youtube": "cm9wdgmC0Bs"    },
+    { "title": "圓光佛學院", "audio": "pphs_yuanguang"}
+  ],
+  "bhaisajya": [
+    {
+      "title": "法鼓山",
+      "audio": "bhaisajya_ddm"
+    },
+    {
+      "title": "湛願法師",
+      "audio": "bhaisajya_zhanyuan",
+      "youtube": "YWNJUqf7YIQ"
+    },
+    {
+      "title": "慧平法師",
+      "audio": "bhaisajya_huiping"
+    }
+  ],
+  "amtb": [
+    {
+      "title": "星辰",
+      "audio": "amtb_xuanzang",
+      "youtube": "St8uh97EEFc"
+    },
+    {
+      "title": "國家一級播音員",
+      "audio": "amtb",
+      "youtube": "6SPgY9y4S2c"
+    }
+  ],
+  "pumen": [
+    {
+      "title": "佛光山課誦",
+      "audio": "pumen",
+      "youtube": "ji1bHi62yio"
+    }
+  ]
+}
