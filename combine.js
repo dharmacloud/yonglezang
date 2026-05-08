@@ -1,6 +1,6 @@
 import {nodefs,filesFromPattern, readTextLines, writeChanged} from 'ptk/nodebundle.cjs'
 await nodefs;
-const folder='ylz-prjn.offtext/ok/'
+const folder='ylz-mpp.offtext/ok/'
 const files=await filesFromPattern('*.off',folder);
 
 files.sort((a,b)=>{
