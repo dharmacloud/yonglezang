@@ -20,6 +20,17 @@ export const filerenames={
     '0658-001慶10':'falun',
     '0997-001斯09':'ksitigarbha1',
     '0997-002斯10':'ksitigarbha2',
+    '0060-001陶01':'ksitigarbhaten1',//地藏十輪經,
+    '0060-002陶02':'ksitigarbhaten2',
+    '0060-003陶03':'ksitigarbhaten3',
+    '0060-004陶04':'ksitigarbhaten4',
+    '0060-005陶05':'ksitigarbhaten5',
+    '0060-006陶06':'ksitigarbhaten6',
+    '0060-007陶07':'ksitigarbhaten7',
+    '0060-008陶08':'ksitigarbhaten8',
+    '0060-009陶09':'ksitigarbhaten9',
+    '0060-010陶10':'ksitigarbhaten10',
+
 
     '1650-031扶01':'platform',
     //http://faculty.stust.edu.tw/~tang/shallow/best_sutra.htm
@@ -1075,5 +1086,18 @@ export const filerenames={
 "0001-598奈08":"mpp598",
 "0001-599奈09":"mpp599",
 "0001-600奈10":"mpp600",
-
+"0142-001方01":"vml1",
+"0142-002方02":"vml2",
+"0142-003方03":"vml3",
+"0143-001方04":"vml_zq1",
+"0143-002方05":"vml_zq2",
+"0143-003方06":"vml_zq3",
+"0145-001蓋01":"vml_xq1",
+"0145-002蓋02":"vml_xq2",
+"0145-003蓋03":"vml_xq3",
+"0145-004蓋04":"vml_xq4",
+"0145-005蓋05":"vml_xq5",
+"0145-006蓋06":"vml_xq6",
+"0023-001乃07":"amtbmaha1",//大阿彌陀經
+"0023-002乃08":"amtbmaha2"
 }
