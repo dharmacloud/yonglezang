@@ -126,7 +126,7 @@ JSZip.loadAsync(data).then(async function (zip) {
             }
         }
     }
-    
+    console.log('outfn',outfn)
 
     const inserts=allinserts[outfn];
     let insertcount=0;

@@ -34,13 +34,30 @@ const filenames={
     1909:'mettaksama',
     685:'ylp',//盂蘭盆經
     842:'purnabodhi',//圓覺經
+    2008:'platform',
+    475:'vml',
+    474:'vml_zq',
+    476:'vml_xq',
+    364:'amtbmaha',//大阿彌陀經
+    411:'ksitigarbhaten',
+    663:'suvarnaprabha',//金光明
+    664:'svnpb', //合部
+    665:'suvarnaprabhasottama',//金光明最勝王
+    676:'nmcn',
+    675:'nirmocana',
+    677:'samdhinirmocana',
+    //'mppd',//光讚般若
+    //'mppf',//小品般若
+
 }    
 const replace=(sid,str)=>{
     const bkid=filenames[sid]
     return str
     .replace(/\^bk\d+【([^】]+)】/g,(m,m1)=>"^bk#"+bkid+"〔"+m1+"〕")
     .replace(/\^h<o=(translator|author)>(.+)\n/g,"^au〔$2〕\n")
-    .replace(/\^ck(\d+)【卷\d+】.*\n/g,(m,m1)=>"^pb1^folio#"+bkid+m1+"\n")
+    //.replace(/\^ck(\d+)【卷\d+】.*\n/g,(m,m1)=>"^pb1^folio#"+bkid+m1+"\n")
+    .replace(/\^juan(\d+)/g,(m,m1)=>"^folio#"+bkid+m1+"\n")
+
 }
 
 if (!filenames[sid]) {
