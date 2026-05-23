@@ -22,10 +22,10 @@ for (let i=0;i<toc.length;i++) {
     const names=juanname.split(/[①②③④⑤⑥⑦⑧⑨]+/);//同一卷名中有多个经名
     if (names.length>1) {
         for (let name of names) {
-            name_hanhao[normalize(name)]=han;
+            if (!name_hanhao[normalize(name)]) name_hanhao[normalize(name)]=han;
         } 
     } else {
-        name_hanhao[normalize(juanname)]=han;
+        if (!name_hanhao[normalize(juanname)])  name_hanhao[normalize(juanname)]=han;
     }
 }
 const taisho_qianlong=readTextLines('taisho-qianlong.tsv');
@@ -48,4 +48,4 @@ for (let i=1;i<taisho_qianlong.length;i++) {
 }
 console.log('total',total,'matched',count);
 const tsv=hanhaotsv.filter( s=>!!s.split('\t')[2]);//只輸出永樂北藏
-writeChanged('hanhaotsv.tsv!git', tsv.join('\n'),true);    
+writeChanged('hanhaotsv.tsv!', tsv.join('\n'),true);    
